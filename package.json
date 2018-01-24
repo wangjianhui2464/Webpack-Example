@@ -11,7 +11,7 @@
     "webpack"
   ],
   "repository": "https://wangjianhui2464.github.io/blog",
-  "author": "wangjianhui2464<wangjianhui2464@gmail.com>",
+  "author": "大辉 <wangjianhui2464@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "webpack": "^3.10.0"
