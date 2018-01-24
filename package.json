@@ -1,0 +1,22 @@
+{
+  "name": "learn-webpack",
+  "version": "1.0.0",
+  "description": "learn webpack 4.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "repository": "https://wangjianhui2464.github.io/blog",
+  "author": "wangjianhui2464<wangjianhui2464@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
