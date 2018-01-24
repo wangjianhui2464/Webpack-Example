@@ -8,4 +8,4 @@ review webpack 主要回顾 webpack 知识体系
 ## 项目索引（Index）
 
 - [起步：简版 webpack 项目配置](https://github.com/wangjianhui2464/Webpack-Example/tree/01-init)
-- 管理资源：webpack 打包css、图片、字体、数据...
+- [管理资源：webpack 打包css、图片、字体、数据](https://github.com/wangjianhui2464/Webpack-Example/tree/02-Asset-Management)
