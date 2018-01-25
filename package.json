@@ -4,10 +4,8 @@
   "description": "learn webpack 4.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open",
-    "build": "webpack",
-    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open --config ./config/webpack.dev.js",
+    "build": "webpack --config ./config/webpack.prod.js",
     "server": "node server.js"
   },
   "keywords": [
@@ -28,6 +26,7 @@
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.4",
     "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
