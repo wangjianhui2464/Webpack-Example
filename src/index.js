@@ -1,33 +1,14 @@
-import _ from 'lodash';
-import printMe from './print.js';
-import './style.css';
+function getComponent() {
 
-if (process.env.NODE_ENV !== 'production') {
-  console.log('Looks like we are in development mode!');
+  // 在注释中使用了 webpackChunkName。这样做会导致我们的 bundle 被命名为 lodash.bundle.js ，而不是 [id].bundle.js
+  return import(/* webpackChunkName: "lodash" */ 'lodash').then(_ => {
+    let element = document.createElement('div');
+    element.innerHTML = _.join(['Hello', 'webpack', 'webpackChunkName'], ' ');
+    return element;
+  }).catch(error => 'An error occurred while loading the component');
+
 }
 
-function component() {
-  let element = document.createElement('div');
-  let btn = document.createElement('button');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  btn.innerHTML = 'click me and 查看 the console!';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-  return element;
-}
-
-let element = component(); // 当 print.js 改变导致页面重新渲染时，重新获取渲染的元素
-document.body.appendChild(element);
-
-if (module.hot) {
-  module.hot.accept('./print.js', function () {
-    console.log('Accepting the updated printMe module!');
-    document.body.removeChild(element);
-    element = component(); // 重新渲染页面后，component 更新 click 事件处理
-    document.body.appendChild(element);
-  });
-}
+getComponent().then(component => {
+  document.body.appendChild(component);
+});
