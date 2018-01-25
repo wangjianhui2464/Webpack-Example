@@ -14,3 +14,4 @@ review webpack 主要回顾 webpack 知识体系
 5. [Tree Shaking：移除 JavaScript 上下文中的未引用代码(dead-code)](https://github.com/wangjianhui2464/Webpack-Example/tree/05-Tree-Shaking)
 6. [生产环境：分离开发、生产配置，使用脚本执行不同配置文件](https://github.com/wangjianhui2464/Webpack-Example/tree/06-production)
 7. [代码分离：入口分离，防止重复，动态导入](https://github.com/wangjianhui2464/Webpack-Example/tree/07-Code-Splitting)
+8. [懒加载、缓存](https://github.com/wangjianhui2464/Webpack-Example/tree/08-lazy-loading)
