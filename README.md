@@ -7,7 +7,8 @@ review webpack 主要回顾 webpack 知识体系
 
 ## 项目索引（Index）
 
-- [起步：简版 webpack 项目配置](https://github.com/wangjianhui2464/Webpack-Example/tree/01-init)
-- [管理资源：webpack 打包css、图片、字体、数据](https://github.com/wangjianhui2464/Webpack-Example/tree/02-Asset-Management)
-- [管理输出：向 HTML 动态添加bundle、清理/dist](https://github.com/wangjianhui2464/Webpack-Example/tree/03-Output-Management)
-- [开发](https://github.com/wangjianhui2464/Webpack-Example/tree/03-Output-Management)
+1. [起步：简版 webpack 项目配置](https://github.com/wangjianhui2464/Webpack-Example/tree/01-init)
+2. [管理资源：webpack 打包css、图片、字体、数据](https://github.com/wangjianhui2464/Webpack-Example/tree/02-Asset-Management)
+3. [管理输出：向 HTML 动态添加bundle、清理/dist](https://github.com/wangjianhui2464/Webpack-Example/tree/03-Output-Management)
+4. [开发及热替换：开发中调试、使用HMR更方便开发](https://github.com/wangjianhui2464/Webpack-Example/tree/04-Hot-Module-Replacement)
+5. [Tree Shaking：移除 JavaScript 上下文中的未引用代码(dead-code)](https://github.com/wangjianhui2464/Webpack-Example/tree/05-Tree-Shaking)
