@@ -4,8 +4,8 @@
   "description": "learn webpack 4.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --config ./config/webpack.dev.js",
-    "build": "webpack --config ./config/webpack.prod.js",
+    "start": "webpack-dev-server --open",
+    "build": "webpack",
     "server": "node server.js"
   },
   "keywords": [

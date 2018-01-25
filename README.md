@@ -12,3 +12,5 @@ review webpack 主要回顾 webpack 知识体系
 3. [管理输出：向 HTML 动态添加bundle、清理/dist](https://github.com/wangjianhui2464/Webpack-Example/tree/03-Output-Management)
 4. [开发及热替换：开发中调试、使用HMR更方便开发](https://github.com/wangjianhui2464/Webpack-Example/tree/04-Hot-Module-Replacement)
 5. [Tree Shaking：移除 JavaScript 上下文中的未引用代码(dead-code)](https://github.com/wangjianhui2464/Webpack-Example/tree/05-Tree-Shaking)
+6. [生产环境：分离开发、生产配置，使用脚本执行不同配置文件](https://github.com/wangjianhui2464/Webpack-Example/tree/06-production)
+7. [代码分离：入口分离，防止重复，动态导入](https://github.com/wangjianhui2464/Webpack-Example/tree/07-Code-Splitting)

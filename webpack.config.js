@@ -9,6 +9,7 @@ module.exports = {
   // 入口
   entry: {
     app: "./src/index.js",
+    another: './src/another-module.js'
   },
   // 增加开发 source-map 生成 用于开发显示错误代码来源。
   // devtool: 有很多选项，有些会生成source map ，有些生成source map 的不适用 生产环境。
@@ -29,10 +30,17 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({title: 'Hot Module Replacement'}),
+    new HtmlWebpackPlugin({
+      title: 'Code Splitting'
+    }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new UglifyJSPlugin()
+    // 删除 死代码
+    new UglifyJSPlugin(),
+    // 防止重复引用 使用 插件 CommonsChunkPlugin
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'common' // 指定公共 bundle 的名称。
+    })
   ],
   // 输出
   output: {
