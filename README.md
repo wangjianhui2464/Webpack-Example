@@ -1,6 +1,11 @@
 # [Webpack-Example](https://github.com/wangjianhui2464/Webpack-Example/tree/master)
 
-review webpack 主要回顾 webpack 知识体系
+### review webpack 主要回顾 webpack 知识体系
+
+本项目主要是回顾了 webpack 3.10.0 的整个功能实现体系。查看方式是按照 tag 的方式进行的。
+下面每一个索引都是一个分支，每个分支代码都不相同，是每块知识的示例代码。
+
+__提示：更应该关注 webpack.config.js 文件。里面讲解了不同功能下不同的配置项。__
 
 > 推荐大家安装 chrome 插件，查看 github 项目目录，很方便。
 [OctoTree](https://github.com/buunguyen/octotree)
@@ -16,3 +21,4 @@ review webpack 主要回顾 webpack 知识体系
 7. [代码分离：入口分离，防止重复，动态导入](https://github.com/wangjianhui2464/Webpack-Example/tree/07-Code-Splitting)
 8. [懒加载：根据自己经验实现懒加载](https://github.com/wangjianhui2464/Webpack-Example/tree/08-lazy-loading)
 9. [缓存：防止浏览器缓存，修改文件chunk名](https://github.com/wangjianhui2464/Webpack-Example/tree/09-caching)
+10. [缓存：防止浏览器缓存，修改文件chunk名](https://github.com/wangjianhui2464/Webpack-Example/tree/09-caching)
