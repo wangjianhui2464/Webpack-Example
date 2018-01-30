@@ -21,28 +21,32 @@
         
     - 通用项
         - `optimization.*` 构建自定义的模式
-        - `process.env.NODE_ENV` 设置生产和开发（）
+        - `process.env.NODE_ENV` 设置生产和开发()
+        - 有一个隐藏的 `none` 模式，可以禁用一切。
         
-```text
-// webpack.production.config.js
-  module.exports = {
-+   mode: "production",
-    plugins: [
--     new UglifyJsPlugin(/* ... */),
--     new webpack.DefinePlugin({ "process.env.NODE_ENV": JSON.stringify("production") }),
--     new webpack.optimize.ModuleConcatenationPlugin(),
--     new webpack.NoEmitOnErrorsPlugin()
-    ]
-  }
-  
-对比
-  
-// webpack.development.config.js
-  module.exports = {
-+   mode: "development",
-    plugins: [
--     new webpack.NamedModulesPlugin(),
--     new webpack.DefinePlugin({ "process.env.NODE_ENV": JSON.stringify("development") }),
-    ]
-  }
-```
+        example：
+        
+        ```text
+        // webpack.production.config.js
+          module.exports = {
+        +   mode: "production",
+            plugins: [
+        -     new UglifyJsPlugin(/* ... */),
+        -     new webpack.DefinePlugin({ "process.env.NODE_ENV": JSON.stringify("production") }),
+        -     new webpack.optimize.ModuleConcatenationPlugin(),
+        -     new webpack.NoEmitOnErrorsPlugin()
+            ]
+          }
+          
+        对比
+          
+        // webpack.development.config.js
+          module.exports = {
+        +   mode: "development",
+            plugins: [
+        -     new webpack.NamedModulesPlugin(),
+        -     new webpack.DefinePlugin({ "process.env.NODE_ENV": JSON.stringify("development") }),
+            ]
+          }
+        ```
+        
