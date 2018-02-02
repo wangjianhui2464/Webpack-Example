@@ -4,9 +4,8 @@
   "description": "learn webpack 4.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack",
-    "server": "node server.js"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "keywords": [
     "webpack"
@@ -15,8 +14,11 @@
   "author": "大辉 <wangjianhui2464@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-plugin": "git+https://github.com/Graham42/html-webpack-plugin.git",
     "webpack": "^4.0.0-alpha.5",
     "webpack-cli": "^2.0.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
   }
 }

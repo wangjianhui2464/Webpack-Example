@@ -1,33 +1,34 @@
 const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require("webpack");
 
 module.exports = {
-  mode: "development",
   entry: {
     index: './src/index.js',
-    vendor: [
-      'lodash'
-    ]
-  },
-  optimization:{
-
+    vendor: ['lodash']
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Caching'
-    }),
-    new webpack.HashedModuleIdsPlugin(),
-    new webpack.optimize.SplitChunksPlugin({
-      name: 'vendor'
-    }),
-    new webpack.optimize.SplitChunksPlugin({
-      name: 'manifest'
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
     })
   ],
+  optimization: {
+    // minimize: true,
+    // runtimeChunk: true,
+    occurrenceOrder: true,
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: "initial",      // 必须三选一： "initial" | "all" | "async"(default)
+          test: /react|lodash/,   // 正则规则验证，如果符合就提取 chunk
+          name: "vendor",         // splitChunk name
+          enforce: true
+        }
+      }
+    }
+  },
   output: {
-    filename: '[name].[chunkhash].js',
-    path:
-      path.resolve(__dirname, 'dist')
+    path: path.join(__dirname, "dist"),
+    // filename: "[name].js",
+    // chunkFilename: "[name].chunk.js"
   }
 };
