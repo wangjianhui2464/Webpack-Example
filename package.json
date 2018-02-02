@@ -1,7 +1,7 @@
 {
-  "name": "test-webpack-alpha5",
+  "name": "webpack-alpha5",
   "version": "1.0.0",
-  "description": "learn webpack 4.0",
+  "description": "test webpack 4.0.0 新特性实践",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
@@ -10,11 +10,10 @@
   "keywords": [
     "webpack"
   ],
-  "repository": "https://wangjianhui2464.github.io/blog",
-  "author": "大辉 <wangjianhui2464@gmail.com>",
+  "repository": "https://github.com/jdf2e/webpack4-demo",
+  "author": "大辉 <wangjianhui3@jd.com>",
   "license": "MIT",
   "devDependencies": {
-    "html-webpack-plugin": "git+https://github.com/Graham42/html-webpack-plugin.git",
     "webpack": "^4.0.0-alpha.5",
     "webpack-cli": "^2.0.4"
   },
